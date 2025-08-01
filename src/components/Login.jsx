@@ -22,10 +22,10 @@ const Login = () => {
 
  
   localStorage.setItem('token', result.data.token);
-  localStorage.setItem('role', result.data.role);
+  // localStorage.setItem('role', result.data.role);
 
-
-  navigate('/landing');
+navigate('/landing');
+  
 })
 
       .catch(err => {
@@ -58,7 +58,14 @@ const Login = () => {
           backgroundPosition: "center",
           borderRadius: "20px"
         }}>
-        <Typography variant="h4" align="center" gutterBottom>
+        <Typography variant="h4" align="center" gutterBottom sx={{
+    fontFamily: '"Press Start 2P", monospace',
+    fontWeight: 'bold',
+    background: 'linear-gradient(90deg, #ff9a9e, #fad0c4)', 
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    textAlign: 'center'
+  }}>
           HUNTRIX
         </Typography>
 

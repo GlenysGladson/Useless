@@ -56,7 +56,14 @@ const Signup = () => {
   }}
 >
 
-        <Typography variant="h4" align="center" gutterBottom>
+        <Typography variant="h4" align="center" gutterBottom sx={{
+    fontFamily: '"Press Start 2P", monospace',
+    fontWeight: 'bold',
+    background: 'linear-gradient(90deg, #ff9a9e, #fad0c4)', 
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    textAlign: 'center'
+  }}>
           HUNTRIX
         </Typography>
 
